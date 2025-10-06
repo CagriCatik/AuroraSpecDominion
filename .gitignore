@@ -1,0 +1,50 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Log and runtime files
+*.log
+*.tmp
+
+# Exported/generated files
+#*.xlsx
+#*.csv
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Ollama models or other LLM cache (if applicable)
+.ollama/
+
+# Application state files
+*.db
+.settings/
+
+# Ignore icons if bundled separately
+*.ico
+*.icns
+
+# Installer metadata
+*.spec

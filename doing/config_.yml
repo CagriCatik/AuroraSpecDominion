@@ -1,0 +1,26 @@
+# -------------------------------------------------
+# Batch-inference configuration
+# -------------------------------------------------
+
+run_settings:                    # How the job itself is executed
+  batch_size: 5                  # Prompts processed together
+  cases_per_prompt: 4            # Test cases generated from each prompt
+  parallel_prompts: false        # true ⟹ split work across workers
+  combine_pages: false           # true ⟹ merge PDF pages before extraction
+
+model_settings:                  # Parameters passed to the LLM
+  model_name: "llama3.2:latest"  # e.g. "meta-llama/Meta-Llama-3-8B-Instruct"
+  max_tokens: 8000
+  temperature: 0.3
+  top_k: 5
+  top_p: 1.0
+  use_rag: false                 # Retrieval-augmented generation toggle
+
+paths:                           # All filesystem locations in one place
+  pdf_path:   "C:/Users/mccat/Desktop/tcg2/sw_req_spec_ras.pdf"
+  prompt_path: "C:/Users/mccat/Desktop/tcg2/Prompt_Expert_Test_Architect.txt"
+  output_dir: "C:/Users/mccat/Desktop/tcg2/output"   # new: where results go
+
+logging:                         # Optional extras
+  log_level: INFO                # DEBUG, INFO, WARNING, ERROR
+  log_file:  "run.log"

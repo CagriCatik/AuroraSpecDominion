@@ -1,0 +1,23 @@
+# GUI and Qt threading
+PySide6==6.7.0
+
+# PDF parsing
+PyMuPDF==1.23.22        # fitz
+PyPDF2==3.0.1
+
+# Data handling and file export
+pandas==2.2.2
+openpyxl==3.1.2
+
+# HTTP requests
+requests==2.31.0
+
+# YAML config handling
+PyYAML==6.0.1
+
+# Retrieval / vectorisation
+scikit-learn==1.4.2
+
+# Tooling & tests
+pytest==8.2.2
+tqdm==4.66.4
