@@ -78,7 +78,7 @@ class MainWindow(QMainWindow):
     # ------------------------------ init ----------------------------------
     def __init__(self) -> None:
         super().__init__()
-        self.setWindowTitle("TSG")
+        self.setWindowTitle("AuroraSpecDominion")
         icon_path = Path(__file__).parent / "assets" / "icon.png"
         self.setWindowIcon(QIcon(str(icon_path)))
         self.resize(1280, 860)
